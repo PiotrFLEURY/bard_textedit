@@ -1,0 +1,12 @@
+description: Read text from a file
+---
+- pressOn: "Load file"
+- expectVisible: 'File list' 
+- scroll:
+    in: 'File list' 
+    until: 'fluttium_test_file.txt'
+    direction: down
+    timeout: 500
+    speed: 40.0 
+- pressOn: "fluttium_test_file.txt"
+- expectVisible: 'Hello World! This is a text written by Fluttium in Flutter Linux Desktop application.'

@@ -1,0 +1,10 @@
+description: Write text to a file
+---
+- pressOn: "Text area"
+- writeText: "Hello World! This is a text written by Fluttium in Flutter Linux Desktop application."
+- expectVisible: 'Hello World! This is a text written by Fluttium in Flutter Linux Desktop application.'
+- pressOn: "Save file"
+- expectVisible: "Enter a file name"
+- pressOn: "Enter a file name"
+- writeText: "fluttium_test_file.txt"
+- pressOn: "Select file"
